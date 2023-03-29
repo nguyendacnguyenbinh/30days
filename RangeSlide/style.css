@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+}
+
+h1{
+    margin-bottom: 40px;
+}
+
+.ranger{
+    width: 600px;
+    height: 50px;
+    border: 1px solid #aaa;
+    background-color: white;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+}
+
+.process{
+    background-image: linear-gradient(to right, #bb69cc, #246bac);
+	position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    
+}
+
+.process span {
+	color: white;
+	font-size: 26px; 
+}
+

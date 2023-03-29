@@ -1,0 +1,98 @@
+*{
+    padding: 0  ;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section{
+    height: 100vh;
+}
+
+#home{
+    background-image: linear-gradient(to right, #4daf54, #3d8880);
+    color: white;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+}
+
+#home h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+
+}
+
+#home .description{
+    font-size: 20px;
+}
+
+#about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    background-color: #242628;
+    color: white;
+    width: 450px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 0 20px;
+    padding: 20px;
+}
+
+.box h1{
+    font-size: 30px;
+    margin-bottom: 15px
+}
+
+#team{
+    background: linear-gradient(180deg, #017c2c 50%, #fff 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.person{
+    width: 200px;
+    height: 210px;
+    box-shadow: 0 0 5px #2e363a;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 0 20px;
+    padding: 20px;
+}
+
+.person h1{
+    color: #017c2c;
+    margin-bottom: 20px;
+}
+
+.left-to-right{
+    transform: translateX(-100%);
+    transition: 1s;
+}
+
+.left-to-right.start{
+    transform: translateX(0);
+}
+
+.right-to-left{
+    transform: translateX(+100%);
+    transition: 1s;
+}
+
+.right-to-left.start{
+    transform: translateX(0);
+}
+
+.zoom{
+    transform: scale(0);
+    transition: 1s;
+}
+
+.zoom.start{
+    transform: scale(1);
+    transition: 1s;
+}

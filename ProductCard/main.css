@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #4daf54;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background-image: linear-gradient(to right, #4daf54, #3d8880);
+}
+
+.card{
+    color: white;
+    border-radius: 15px;
+    background-color: #272d40;
+    margin: 120px auto;
+    padding: 40px 20px;
+    width: 320px;
+    height: 400px;
+    position: relative;
+}
+
+.card__heart{
+    position: absolute;
+    font-size: 25px;
+    top: 20px;
+    cursor: pointer;
+    left: 20px;
+    z-index: 2;
+}
+
+.card__cart{
+    position: absolute;
+    font-size: 25px;
+    top: 20px;
+    cursor: pointer;
+    right: 20px;
+}
+
+.card__img{
+    width: 90%;
+    transition: 0.5s;
+}
+
+.card__img img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.card__title{
+    color: var(--primary-color);
+    text-align: center;
+    transition: 0.5s;
+
+}
+
+.card__price{
+    text-align: center;
+    font-weight: 600;
+    font-size: 26px;
+    margin-top: 10px;
+    transition: 0.5s;
+
+}
+
+.card__size, .card__color , .card__action{
+    display: flex;
+    justify-items: center;
+    margin-bottom: 10px;
+    align-items: center;
+  
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+
+.card__size {  
+    margin-top: 150px;
+}
+
+.card__size h3, .card__color h3{
+    margin-right: 12px;
+}
+
+.card__size span {
+    justify-content: center;
+    text-align: center;
+    width: 25px;
+    height: 100%;
+    border-radius: 5px;
+    color: #000;
+    margin: 0 5px;
+    padding: 3px 0;
+    background-color: #dadada;
+    cursor: pointer;
+
+}
+
+.card__color span{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.card__color .green{
+    background-color: green;
+}
+
+.card__color .red{
+    background-color: red;
+}
+
+.card__color .black{
+    background-color: black;
+}
+
+.card__action button{
+    background-color: var(--primary-color);
+    color: #fff;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 7px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+
+.card__action button:hover{
+    transform: scale(0.9);
+}
+
+.card:hover .card__img{
+    transform: translateY(-90px) rotate(-20deg);
+}
+
+.card:hover .card__title{
+    transform:  translate(-38px, -70px);
+}
+
+
+.card:hover .card__price{
+    transform:  translate(-117px, -70px);
+}
+
+.card:hover .card__size,
+.card:hover .card__color,
+.card:hover .card__action{
+    visibility: visible;
+    opacity: 100;
+    transition-delay: 0.4s;
+}
+
+.card:hover .card__size{
+    margin-top: -30px;
+}
+
