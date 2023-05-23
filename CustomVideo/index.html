@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <div class="container">
+        <video class="video" type = "video/mp4">
+            <source src="https://storage.googleapis.com/web-dev-assets/video-and-source-tags/chrome.mp4">
+        </video>
+        <div class="control">
+            <button class="play control-btn">
+                <i class='bx bx-play'></i>
+                <!-- <i class='bx bx-pause' ></i> -->
+            </button>
+            <p class="time">00:00 / 00:00</p>
+            <div class="progress">
+                <div class="progress__filled"></div>
+            </div>
+            <button class="skip control-btn">« 10s</button>
+            <button class="skip control-btn">10s »</button>
+            <div class="volume">
+                <i></i>
+                <input type="range" class="range">
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
